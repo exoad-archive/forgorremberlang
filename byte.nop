@@ -1,9 +1,9 @@
 * Work on this later *
 * Change all keywords to forgor and rember :) *
-: = split_ip ; 
-i = push . > q
+splort = split_ip ; 
+forgor = push . > q
 o = pop . > q
-l = . > reg & pop > . > q
+rember = . > reg & pop > . > q
 s = 
 + \=
 - \=
