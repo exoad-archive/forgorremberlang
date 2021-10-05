@@ -50,7 +50,6 @@ skip;
 void error(char * fmt, ...) {
   va_list args;
   buf_t * line;
-
   va_start(args, fmt);
   fputs("Error: ", stderr);
   vfprintf(stderr, fmt, args);
