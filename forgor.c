@@ -233,7 +233,7 @@ void split_ip (void)
 		if (get_at(current->pos.x+dir.x, current->pos.y+dir.y)!=' ') {
 			temp=(ip_t*)malloc(sizeof(ip_t));
 			if (temp==NULL)
-				error("Memory allocation error on split_ip()");
+				error("Buffer Memory Location returned NULL");
 			temp->q=current->q;
 			temp->reg=current->reg;
 			temp->pos.x=current->pos.x+dir.x;
@@ -284,8 +284,8 @@ void parse (char cmd)
 		case '%': push(current->q, current->reg%pop(current->q)); break;
 		case '!': push(current->q, !pop(current->q)); break;
 		case '#': skip=SKIP; break;
-		case '$': skip=EAT; break; /* timeless NOP */
-		case '@': break; /* timeful NOP */
+		case '$': skip=EAT; break; 
+		case '@': break; 
 	}
 }
 
