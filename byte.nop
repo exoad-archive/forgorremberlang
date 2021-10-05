@@ -1,0 +1,15 @@
+* Work on this later *
+: = split_ip ; 
+i = push . > q
+o = pop . > q
+l = . > reg & pop > . > q
+s = 
++ \=
+- \=
+* \=
+/ \=
+% \=
+! \=
+# \=
+$ \=
+@ \=
