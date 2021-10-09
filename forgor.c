@@ -21,6 +21,7 @@ buf_t;
 typedef struct {
   int x, y;
 }
+
 vect_t;
 
 typedef struct {
